@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA_FRM", "WA_FRM\WA_FRM.csproj", "{7FE58A85-229A-4336-80F0-987FB4FE13CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA_FRMTests", "WA_FRMTests\WA_FRMTests.csproj", "{B6DC57CF-9A52-44E3-9131-D726E10097F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FE58A85-229A-4336-80F0-987FB4FE13CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE58A85-229A-4336-80F0-987FB4FE13CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE58A85-229A-4336-80F0-987FB4FE13CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE58A85-229A-4336-80F0-987FB4FE13CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6DC57CF-9A52-44E3-9131-D726E10097F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DC57CF-9A52-44E3-9131-D726E10097F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DC57CF-9A52-44E3-9131-D726E10097F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DC57CF-9A52-44E3-9131-D726E10097F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

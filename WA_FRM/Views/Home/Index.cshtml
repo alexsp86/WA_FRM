@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+@{
+    if (ViewBag.Message != null)
+    {
+        <h2>@ViewBag.Message</h2>
+    }
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <table>
+       <tr>
+          <td><input type="text" name="MatrixSize" value="@ViewBag.Matrix.size" size="2"/></td>
+          <td><button name="action" value="Resize">Разметить</button></td>                   
+       </tr>
+    </table>
+    <table>
+    @for (int i = 0; i < ViewBag.Matrix.size; i++)
+    {
+        <tr>
+        @for (int j = 0; j < ViewBag.Matrix.size; j++)
+        {
+            <td><input type="text" name="m[@i][@j]" value="@ViewBag.Matrix[i,j]" size="2"/></td>
+        }
+        </tr>
+    }    
+    </table>
+    <table>
+        <tr>            
+            <td><button name="action" value="Rotate">Повернуть</button></td>            
+        </tr>
+        <tr>
+            <td><button name="action" value="SaveToFile">Сохранить в файл</button></td> 
+        </tr>
+    </table>
+}
+@using (Html.BeginForm("LoadFromFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{<table>
+     <td>
+         <input type="submit" value="Загрузить из" />
+         <input id="file" type="file" name="file"  />
+     </td>
+</table>
+}
